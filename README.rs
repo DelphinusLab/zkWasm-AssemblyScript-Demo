@@ -25,5 +25,5 @@ cargo build --release
 cd zkWasm
 RUST_LOG=info cargo run --release -- --function zkmain --output ./output --wasm ../demo.wasm setup
 RUST_LOG=info cargo run --release -- --function zkmain --output ./output --wasm ../demo.wasm single-prove --public 3:i64 --private 1:i64 --private 2:i64
-RUST_LOG=info cargo run --release -- --function zkmain --output ./output --wasm ../demo.wasm single-verify --public 3:i64 --proof output/zkwasm.0.transcript.data
+RUST_LOG=info cargo run --release -- --function zkmain --output ./output --wasm ../demo.wasm single-verify
 ```
